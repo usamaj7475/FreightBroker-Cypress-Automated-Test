@@ -1,0 +1,14 @@
+{
+  "name": "freight-broker",
+  "version": "1.0.0",
+  "description": "This is a package that consists of all the scripts for the both freight broker web app which is back office and POC/BROKER side ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad usama",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.13.0"
+  }
+}
