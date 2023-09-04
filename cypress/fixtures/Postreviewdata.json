@@ -1,0 +1,14 @@
+
+{
+    "aboutyou": "This is a text enter during the automation script 7",
+    "proofofwork": {
+        "fileName": "image1.jpg",
+        "filePath": "cypress/fixture/image.jpg",
+        "mimeType": "image/jpg"
+      },
+    "attachment": {
+        "fileName": "image1.jpg",
+        "filePath": "cypress/fixture/image.jpg",
+        "mimeType": "image/jpg"
+      }
+}

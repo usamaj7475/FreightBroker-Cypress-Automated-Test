@@ -1,0 +1,25 @@
+[
+    {
+        "firstname":"john",
+        "lastname":"doe",
+        "email":"usama.javed+validdata86@emerald-labs.com",
+        "phonenumber":"7894561210",
+        "role":"Broker"
+
+    },
+    {
+        "firstname":"john123",
+        "lastname":"doe123",
+        "email":"usama.javed+invaliddata@emerald-labs.com",
+        "phonenumber":"741085",
+        "role":"Broker"
+
+    },
+    {
+        "firstname":"john123",
+        "lastname":"doe123",
+        "email":"us/ama/.javed+@invaliemerald-la.bcom",
+        "phonenumber":"741085"
+
+    }
+]

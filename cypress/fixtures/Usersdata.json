@@ -1,0 +1,22 @@
+[
+    
+    
+    {
+    "username": "usama.javed@emerald-labs.com",
+    "password":"asdasdasd",
+    "expected":"team management"
+    },
+
+    {
+        "username":"usama.javed@emerald-labs.com",
+        "password":"dasdasdda",
+        "expected":"Incorrect username or password."
+    }          
+,
+    {
+        "username":"usama.javed+987asd@emerald-labs.com",
+        "password":"dasdasdda",
+        "expected":"Invalid Credentials"
+    }   
+
+]
