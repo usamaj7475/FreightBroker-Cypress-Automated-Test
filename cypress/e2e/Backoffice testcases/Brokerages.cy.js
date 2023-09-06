@@ -18,7 +18,7 @@ beforeEach(() => {
 
     })
 
-    it.only('visit back office brokerages table', ()=>{
+    it('visit back office brokerages table', ()=>{
         cy.get(':nth-child(2) > .ant-btn').click()
         //cy.get('.bg-themeOrange > .flex > :nth-child(1) > .text-white').should('contain', 'brokerages').click()
         cy.get('.ant-modal-content').should('be.visible');
