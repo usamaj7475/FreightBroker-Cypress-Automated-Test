@@ -1,3 +1,5 @@
+import {Login} from '../pages/login'
+
 beforeEach(() => {
   cy.on('uncaught:exception', (err) => {
     // Check if the error message or stack trace includes the specific error you want to ignore
@@ -17,10 +19,14 @@ beforeEach(() => {
   });
 });
 
+
+const log = new Login();
+
+
 describe('Login to Freight Broker back office', () => {
 
 
-  it('Login to back office with multiple user', () => {
+  it.only('Login to back office with multiple user', () => {
 
 
     cy.fixture('Usersdata').then((data) => {
@@ -29,13 +35,13 @@ describe('Login to Freight Broker back office', () => {
 
 
 
-        cy.visit("https://staging.d2m5lpbf9n6q29.amplifyapp.com/admin")
+        log.navigator("https://staging.d2m5lpbf9n6q29.amplifyapp.com/admin")
 
-        cy.get('#basic_email').type(userData.username)
-        cy.get('#basic_password').type(userData.password)
+        log.enterEmail(userData.username)
+        log.enterPwd(userData.password)
 
 
-        cy.get('.ant-btn').click()
+        log.loginBtnClick()
 
 
 
