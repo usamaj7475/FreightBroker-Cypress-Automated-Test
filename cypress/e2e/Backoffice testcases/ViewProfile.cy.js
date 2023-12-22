@@ -32,7 +32,7 @@ describe( 'visit back office brokerages table', () => {
 
 
         //Verifying whether its the profile of the user whose profile we wanted to view on the bases of first name
-        cy.get('#firstName').should('have.value' , 'qweasdzxcrtyfghvbnvuiopjklmqweasdzxcrtvbnvuiop')
+        cy.get('#firstName').should('have.value' , 'USAMA')
 
 
         //Verifying whether its the profile of the user whose profile we wanted to view on the bases of EMAIL
@@ -43,5 +43,18 @@ describe( 'visit back office brokerages table', () => {
 
         //Verify that email is disabled
         cy.get('#email').should('be.disabled')
+
+
+         //Uploading File Method-2 using fixtures & selectFile function
+         cy.fixture('image1.jpg', { encoding: null })
+         .as('uploadPic')
+         .get('input[type=file]')
+         .selectFile('@uploadPic',{force: true})
+
+
+         cy.get('.ant-message-custom-content')
+         .should('be.visible')
+         .should('contain', 'successfully')
+
     })
 })
